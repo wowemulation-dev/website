@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* Configure dark mode to use class strategy instead of media query */
+@config "../../javascript/tailwind.config.js";

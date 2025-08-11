@@ -1,0 +1,243 @@
+<!-- Hero Section - Mobile First -->
+<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900 dark:from-gray-900 dark:via-purple-900 dark:to-gray-900">
+  <div class="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
+  <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6">
+      WoW Emulation
+    </h1>
+    <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl md:max-w-3xl mx-auto">
+      Preserving World of Warcraft's technical history through open-source emulation and archival.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+      <a href="#projects" class="px-6 sm:px-8 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition-all transform hover:scale-105">
+        Explore Projects
+      </a>
+      <a href="https://discord.gg/Q44pPMvGEd" target="_blank" rel="noopener" class="px-6 sm:px-8 py-3 bg-white/10 backdrop-blur text-white border border-white/30 rounded-lg font-semibold hover:bg-white/20 transition-all transform hover:scale-105">
+        Join Discord
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section - Mobile First -->
+<section id="projects" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 text-gray-900 dark:text-white">Our Projects</h2>
+    <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 text-center mb-8 sm:mb-12 max-w-2xl md:max-w-3xl mx-auto">
+      Open-source tools and libraries for World of Warcraft emulation and development.
+    </p>
+    
+    <!-- World of Warcraft Classic Group -->
+    <div class="mb-12">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 dark:text-white">World of Warcraft Classic</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl">Modern tools for current World of Warcraft versions, focusing on data extraction, client interaction, and development utilities.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <!-- Cascette-rs -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-center mb-3 sm:mb-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold ml-3 text-gray-900 dark:text-white">cascette-rs</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
+              Rust implementation of Blizzard's NGDP (Next Generation Distribution Pipeline) for modern WoW data handling.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+              <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs sm:text-sm rounded">Rust</span>
+              <span class="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs sm:text-sm rounded">v0.4.1</span>
+            </div>
+            <a href="https://github.com/wowemulation-dev/cascette-rs" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- TypeScript2CXX -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-center mb-3 sm:mb-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold ml-3 text-gray-900 dark:text-white">typescript2cxx</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
+              TypeScript to C++ transpiler enabling modern JavaScript/TypeScript syntax for native game development.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs sm:text-sm rounded">TypeScript</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs sm:text-sm rounded">C++</span>
+              <span class="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs sm:text-sm rounded">v0.8.0</span>
+            </div>
+            <a href="https://github.com/wowemulation-dev/typescript2cxx" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- Deno WoW Kit -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-center mb-3 sm:mb-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold ml-3 text-gray-900 dark:text-white">deno-wow-kit</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
+              Modern TypeScript utilities and tools for World of Warcraft development using Deno runtime.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs sm:text-sm rounded">TypeScript</span>
+              <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs sm:text-sm rounded">Deno</span>
+              <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-xs sm:text-sm rounded">Early Development</span>
+            </div>
+            <a href="https://github.com/wowemulation-dev/deno-wow-kit" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- World of Warcraft Legacy Group -->
+    <div>
+      <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 dark:text-white">World of Warcraft Legacy</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl">Tools and emulators for World of Warcraft versions 1.x to 5.x, focusing on preservation and emulation of the original historic game releases and expansions.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <!-- Warcraft-rs -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-center mb-3 sm:mb-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold ml-3 text-gray-900 dark:text-white">warcraft-rs</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
+              Comprehensive Rust library for reading and manipulating World of Warcraft file formats (MPQ, ADT, M2, WMO).
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+              <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs sm:text-sm rounded">Rust</span>
+              <span class="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs sm:text-sm rounded">v0.3.0</span>
+            </div>
+            <a href="https://github.com/wowemulation-dev/warcraft-rs" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- Wooly Beast -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-center mb-3 sm:mb-4">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold ml-3 text-gray-900 dark:text-white">wooly-beast</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
+              World of Warcraft server emulator for legacy versions, built with modern C++ practices.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs sm:text-sm rounded">C++</span>
+              <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-xs sm:text-sm rounded">Early Development</span>
+            </div>
+            <a href="https://github.com/wowemulation-dev/wooly-beast" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting Started Section - Mobile First -->
+<section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-3 sm:mb-4 text-gray-900 dark:text-white">Getting Started</h2>
+    <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 text-center mb-8 sm:mb-12 max-w-2xl md:max-w-3xl mx-auto">
+      Join our community and start contributing to World of Warcraft preservation efforts.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <div class="text-center">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900 dark:text-white">Explore Documentation</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base px-4">
+          Comprehensive guides and API documentation for all our projects and tools.
+        </p>
+        <a href="https://github.com/wowemulation-dev" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+          Browse Docs →
+        </a>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900 dark:text-white">Join the Community</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base px-4">
+          Connect with developers and enthusiasts on Discord for help and collaboration.
+        </p>
+        <a href="https://discord.gg/Q44pPMvGEd" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+          Join Discord →
+        </a>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900 dark:text-white">Start Contributing</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base px-4">
+          Fork our repositories and submit pull requests to help preserve WoW's legacy.
+        </p>
+        <a href="https://github.com/wowemulation-dev/.github/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold text-sm sm:text-base">
+          Contribution Guide →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section - Mobile First -->
+<section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-800 dark:to-blue-800 text-white">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Preserving Gaming History</h2>
+    <p class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl md:max-w-3xl mx-auto">
+      Founded in August 2023, our mission is to preserve World of Warcraft's technical history through open-source emulation and game archival.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+      <a href="mailto:hello+github@wowemulation.dev" class="px-6 sm:px-8 py-3 bg-white text-purple-600 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+        Contact Us
+      </a>
+      <a href="https://github.com/wowemulation-dev" target="_blank" rel="noopener" class="px-6 sm:px-8 py-3 bg-white/10 backdrop-blur text-white border border-white/30 rounded-lg font-semibold hover:bg-white/20 transition-all transform hover:scale-105">
+        GitHub Organization
+      </a>
+    </div>
+  </div>
+</section>

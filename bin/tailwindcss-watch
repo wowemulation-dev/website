@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Starting TailwindCSS watcher..."
+
+# Try to run tailwindcss with watch, if watchman warning appears, use polling fallback
+while true; do
+  bundle exec tailwindcss \
+    -i ./app/assets/tailwind/application.css \
+    -o ./app/assets/builds/application.css \
+    --watch 2>&1 | grep -v "watchman: not found" || true
+  
+  # If tailwindcss exits, wait a bit and restart
+  echo "TailwindCSS watcher stopped, restarting in 2 seconds..."
+  sleep 2
+done
